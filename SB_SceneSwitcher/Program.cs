@@ -391,7 +391,7 @@ public class CPHInline
             }
             case ActivityBehavior.BlackList:
             {
-		isRelevant = true;    
+                isRelevant = true;
                 foreach (string str in blackListedScenes)
                 {
                     if (str.Trim().ToLower().Equals(currentScene.ToLower()))
@@ -399,7 +399,7 @@ public class CPHInline
                         isRelevant = false;
                         break;
                     }
-                }                
+                }
                 break;
             }
             case ActivityBehavior.AlwaysOn:
@@ -412,7 +412,7 @@ public class CPHInline
                 isRelevant = false;
                 break;
         }
-        
+
         debug($"isRelevant={isRelevant}");
         return isRelevant;
     }
